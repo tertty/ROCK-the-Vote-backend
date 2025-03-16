@@ -61,53 +61,49 @@ impl PersistentData {
         // Vec of a (String, String, QuestionType) tuple that represents a full year of prompts.
         // Each index is a month (0..11), and each index is a vec of the tuple that represents the days of the month (0..x).
         let rtv_prompts = [
+            // Jan
             vec![
-                ("George Costanza".to_string(),"Jerry Seinfeld".to_string(), QuestionType::WWW),
-                ("Dine in".to_string(),"Eat out".to_string(), QuestionType::TOT),
-                ("Star in a TV show".to_string(),"Star in a movie".to_string(), QuestionType::WYR),
+
             ],
-            vec![],
-            vec![],
-            vec![],
-            vec![],
-            vec![],
-            vec![],
-            vec![],
-            vec![],
-            vec![],
+            // Feb
             vec![
-                ("".to_string(), "".to_string(), QuestionType::WYR),
-                ("".to_string(), "".to_string(), QuestionType::WYR),
-                ("".to_string(), "".to_string(), QuestionType::WYR),
-                ("".to_string(), "".to_string(), QuestionType::WYR),
-                ("".to_string(), "".to_string(), QuestionType::WYR),
-                ("".to_string(), "".to_string(), QuestionType::WYR),
-                ("".to_string(), "".to_string(), QuestionType::WYR),
-                ("".to_string(), "".to_string(), QuestionType::WYR),
-                ("".to_string(), "".to_string(), QuestionType::WYR),
-                ("".to_string(), "".to_string(), QuestionType::WYR),
-                ("".to_string(), "".to_string(), QuestionType::WYR),
-                ("".to_string(), "".to_string(), QuestionType::WYR),
-                ("".to_string(), "".to_string(), QuestionType::WYR),
-                ("".to_string(), "".to_string(), QuestionType::WYR),
-                ("".to_string(), "".to_string(), QuestionType::WYR),
-                ("".to_string(), "".to_string(), QuestionType::WYR),
-                ("".to_string(), "".to_string(), QuestionType::WYR),
-                ("".to_string(), "".to_string(), QuestionType::WYR),
-                ("".to_string(), "".to_string(), QuestionType::WYR),
-                ("Red Test".to_string(), "Blue Test".to_string(), QuestionType::WYR),
-                ("live in a treehouse".to_string(), "live in a cave".to_string(), QuestionType::WYR),
-                ("Batman".to_string(),"Superman".to_string(), QuestionType::WWW),
-                ("Hot weather".to_string(),"Cold weather".to_string(), QuestionType::TOT),
-                ("Be able to fly".to_string(),"Be able to teleport".to_string(), QuestionType::WYR),
-                ("Xbox".to_string(),"Playstation".to_string(), QuestionType::TOT),
-                ("Robocop".to_string(),"The Terminator (T-800)".to_string(), QuestionType::WWW),
-                ("Have a photographic memory".to_string(),"Be a genius".to_string(), QuestionType::WYR),
-                ("Dogs".to_string(),"Cats".to_string(), QuestionType::TOT),
-                ("Be beautiful and stupid".to_string(),"Be unattractive but a genius".to_string(), QuestionType::WYR),
-                ("Have seven fingers on each hand".to_string(),"Have seven toes on each foot".to_string(), QuestionType::WYR),
-                ("James Bond".to_string(),"Jason Bourne".to_string(), QuestionType::WWW)
+
             ],
+            // March
+            vec![
+                ("Move like a robot".to_string(), "Talk like a robot".to_string(), QuestionType::WYR),
+                ("Chocolate".to_string(), "Vanilla".to_string(), QuestionType::TOT),
+                ("Thor".to_string(), "The Hulk".to_string(), QuestionType::WWW),
+                ("Mario".to_string(), "Sonic".to_string(), QuestionType::WWW),
+                ("Roomba with a knife".to_string(), "Drone with a water gun".to_string(), QuestionType::WWW),
+                ("Have hair that changes color based on mood".to_string(), "Have glow in the dark skin".to_string(), QuestionType::WYR),
+                ("Star Wars".to_string(), "Star Trek".to_string(), QuestionType::TOT),
+                ("Coffee".to_string(), "Tea".to_string(), QuestionType::TOT),
+                ("Live without music".to_string(), "Live without TV".to_string(), QuestionType::WYR),
+                ("Link".to_string(), "Kratos".to_string(), QuestionType::WWW),
+                ("Tesla".to_string(), "Edison".to_string(), QuestionType::WWW),
+                ("Terraria".to_string(), "Minecraft".to_string(), QuestionType::TOT),
+                ("Spicy".to_string(), "Mild".to_string(), QuestionType::TOT),
+                ("Only whisper".to_string(), "Only shout".to_string(), QuestionType::WYR),
+                ("Tetris Blocks".to_string(), "Minecraft Blocks".to_string(), QuestionType::WWW),
+                ("Only talk in riddles".to_string(), "Only talk in emojis".to_string(), QuestionType::WYR),
+                ("Talk to plants".to_string(), "Talk to animals".to_string(), QuestionType::WYR),
+                ("Bowser".to_string(), "Dr. Robotnik".to_string(), QuestionType::WWW),
+                ("Hot Coffee".to_string(), "Iced Coffee".to_string(), QuestionType::TOT),
+                ("Cake".to_string(), "Pie".to_string(), QuestionType::TOT),
+                ("The Simpsons".to_string(), "Family Guy".to_string(), QuestionType::TOT),
+                ("Iron Man".to_string(), "Captian American".to_string(), QuestionType::WWW),
+                ("Godzilla".to_string(), "King Kong".to_string(), QuestionType::WWW),
+                ("Pizza".to_string(), "Burgers".to_string(), QuestionType::TOT),
+                ("Always burp confetti".to_string(), "Always sneeze glitter".to_string(), QuestionType::WYR),
+                ("Ice Cream".to_string(), "Cake".to_string(), QuestionType::TOT),
+                ("Have an extra eye".to_string(), "Have an extra ear".to_string(), QuestionType::WYR),
+                ("Wear a tuxedo to bed".to_string(), "Wear pajamas to every formal event".to_string(), QuestionType::WYR),
+                ("Have a mariachi band".to_string(), "Have a laugh track".to_string(), QuestionType::WYR),
+                ("Always wear clown shoes".to_string(), "Always wear a giant sombrero".to_string(), QuestionType::WYR),
+                ("A lion with eagle wings".to_string(), "A shark that can breathe air".to_string(), QuestionType::WWW),
+            ],
+            // April
             vec![
                 ("Johnny English".to_string(),"Mr. Bean".to_string(), QuestionType::WWW),
                 ("The Beach".to_string(),"The Mountains".to_string(), QuestionType::TOT),
@@ -138,8 +134,83 @@ impl PersistentData {
                 ("Drink sour milk".to_string(),"Brush your teeth with soap".to_string(), QuestionType::WYR),
                 ("Grilled Cheese".to_string(),"Tacos".to_string(), QuestionType::TOT),
                 ("Goku".to_string(),"Superman".to_string(), QuestionType::WWW),
-                ("Master Chief".to_string(),"The Doom Slayer".to_string(), QuestionType::WWW),
+                ("Master Chief".to_string(),"The Doom Slayer".to_string(), QuestionType::WWW)
+            ],
+            // May
+            vec![
+                ("Star in a TV show".to_string(),"Star in a movie".to_string(), QuestionType::WYR),
+                ("Big city".to_string(), "Small town".to_string(), QuestionType::TOT),
+                ("Spring".to_string(), "Fall".to_string(), QuestionType::TOT),
+                ("Be beautiful and stupid".to_string(),"Be unattractive but a genius".to_string(), QuestionType::WYR),
                 ("Coke".to_string(),"Pepsi".to_string(), QuestionType::TOT),
+                ("Day".to_string(), "Night".to_string(), QuestionType::TOT),
+                ("Neo".to_string(), "John Wick".to_string(), QuestionType::WWW),
+                ("Cold".to_string(), "Hot".to_string(), QuestionType::TOT),
+                ("Be able to fly".to_string(),"Be able to teleport".to_string(), QuestionType::WYR),
+                ("R2-D2".to_string(), "WALL-E".to_string(), QuestionType::WWW),
+                ("Dogs".to_string(),"Cats".to_string(), QuestionType::TOT),
+                ("James Bond".to_string(),"Jason Bourne".to_string(), QuestionType::WWW),
+                ("The Flash".to_string(), "Quicksilver".to_string(), QuestionType::WWW),
+                ("Batman".to_string(),"Superman".to_string(), QuestionType::WWW),
+                ("Summer".to_string(), "Winter".to_string(), QuestionType::TOT),
+                ("Have seven fingers on each hand".to_string(),"Have seven toes on each foot".to_string(), QuestionType::WYR),
+                ("Red".to_string(),"Blue".to_string(), QuestionType::TOT),
+                ("Team Fortress 2".to_string(), "Overwatch".to_string(), QuestionType::TOT),
+                ("Xbox".to_string(),"Playstation".to_string(), QuestionType::TOT),
+                ("Dine in".to_string(),"Eat out".to_string(), QuestionType::TOT),
+                ("Rain".to_string(), "Snow".to_string(), QuestionType::TOT),
+                ("Move like a robot".to_string(), "Talk like a robot".to_string(), QuestionType::WYR),
+                ("George Costanza".to_string(),"Jerry Seinfeld".to_string(), QuestionType::WWW),
+                ("Robocop".to_string(),"The Terminator (T-800)".to_string(), QuestionType::WWW),
+                ("Have a photographic memory".to_string(),"Be a genius".to_string(), QuestionType::WYR),
+                ("Yoda".to_string(), "Dumbledore".to_string(), QuestionType::WWW),
+                ("Hot weather".to_string(),"Cold weather".to_string(), QuestionType::TOT),
+                ("Have a pet dragon".to_string(), "Have a pet unicorn".to_string(), QuestionType::WYR),
+                ("live in a treehouse".to_string(), "live in a cave".to_string(), QuestionType::WYR),
+                ("Optimus Prime".to_string(), "Voltron".to_string(), QuestionType::WWW),
+                ("Summer".to_string(), "Winter".to_string(), QuestionType::TOT),        
+            ],
+            // June TBD
+            vec![
+                ("Comedy".to_string(), "Horror".to_string(), QuestionType::TOT),
+                ("Books".to_string(), "Movies".to_string(), QuestionType::TOT),
+                ("Zombies".to_string(), "Vampires".to_string(), QuestionType::TOT),
+                ("Aliens".to_string(), "Ghosts".to_string(), QuestionType::TOT),
+                ("Avatar".to_string(), "Dune".to_string(), QuestionType::TOT),
+                ("Pokémon".to_string(), "Digimon".to_string(), QuestionType::TOT),
+                ("Tintin".to_string(), "Indiana Jones".to_string(), QuestionType::TOT),
+                ("Nintendo".to_string(), "Sega".to_string(), QuestionType::TOT),
+                ("Smash Bros".to_string(), "Tekken".to_string(), QuestionType::TOT),
+                ("Street Fighter".to_string(), "Mortal Kombat".to_string(), QuestionType::TOT),
+                ("Guitar Hero".to_string(), "Dance Dance Revolution".to_string(), QuestionType::TOT),
+                ("Sneakers".to_string(), "Sandals".to_string(), QuestionType::TOT),
+                ("Homer Simpson".to_string(), "Peter Griffin".to_string(), QuestionType::WWW),
+            ],
+            // July
+            vec![
+
+            ],
+            // August
+            vec![
+
+            ],            
+            // September
+            vec![],
+            // October
+            vec![
+                ("Freddy Krueger".to_string(), "Pennywise".to_string(), QuestionType::WWW),
+                ("Dracula".to_string(), "Frankenstein".to_string(), QuestionType::WWW),
+                ("Jason Voorhees".to_string(), "Michael Myers".to_string(), QuestionType::WWW),
+                ("The Mummy".to_string(), "The Werewolf".to_string(), QuestionType::WWW),
+                ("Ghostface".to_string(), "Jigsaw".to_string(), QuestionType::WWW),
+                ("The Demogorgon".to_string(), "The Xenomorph".to_string(), QuestionType::WWW),
+            ],
+            // November
+            vec![
+
+            ],
+            // December
+            vec![
 
             ]
         ];
